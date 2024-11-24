@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="orden.css">
+</head>
+<body>
+    <div class="container" id="formOrden">
+        <img src="img/logo.png" alt="Peanut Jam Logo" class="logo">
+        <h1>Orden de Compra</h1>
+        <form action="gracias.html">
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto">
+                <option value="producto1" data-precio="70">Peanutjam - $70</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+            <label for="total">Total a pagar:</label>
+            <input type="text" id="total" name="total" readonly>
+
+            <h2>Información de Envío</h2>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="colonia">Colonia:</label>
+            <input type="text" id="colonia" name="colonia" required>
+
+
+            <h2>Información de Pago</h2>
+            <label for="numeroTarjeta">Número de Tarjeta:</label>
+            <input type="text" id="numeroTarjeta" name="numeroTarjeta" required>
+
+
+            <label for="fechaExpiracion">Fecha de Expiración (MM/AA):</label>
+            <input type="text" id="fechaExpiracion" name="fechaExpiracion" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

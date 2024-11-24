@@ -1,0 +1,18 @@
+body {
+    font-family: century;
+    text-align: center;
+    background-color: #feded1;
+}
+
+h1 {
+    font-family: century;
+    color: #333;
+    margin-top: 50px;
+}
+
+p {
+    font-family: century;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
